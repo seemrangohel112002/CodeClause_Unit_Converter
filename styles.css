@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Press+Start+2P&family=Syncopate&family=Ubuntu:wght@300&display=swap');* {
+    font-family: 'Inconsolata', monospace;
+}
+body {
+    padding-top: 20px;
+    background-color: #000453;
+    /*background: url(https://unsplash.com/photos/iBN20z8wWo8) no-repeat center center fixed; */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
+  h1 {
+    color: #EEEEEE;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 10PX;
+    width: 100%;
+    max-width: 600px;
+  }
+ h1 span {
+    color: #409bd8;
+    font-family: 'Caveat', cursive;
+ }
+ p
+ {
+  font-style: normal;
+  color: aquamarine;
+ }
+
+ h3 {
+  color: white;
+}
+h4
+{
+  color: white;
+
+}
+table 
+{
+  border: 2px solid rgb(27, 27, 145);
+  border-radius: 20px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+  .converter-wrapper {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 54px;
+  }
+  
+  .converter-wrapper input {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .converter-wrapper span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .converter-wrapper span select {
+    background-color: #3E4149;
+    color: #F0F5F9;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 5px;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  .converter-wrapper span::before,
+  .converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .converter-wrapper span::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+  }
+  
+  .converter-wrapper span::before { /*  Custom dropdown arrow cover */
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: #3E4149;
+  }
+  
+  .converter-side-a,
+  .converter-side-b {
+    float: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 45%;
+  }
+  
+  .converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: #F0F5F9;
+    font-size: 2.4em;
+    line-height: 0;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .converter-side-a {
+    padding-right: 10px;
+  }
+  
+  .converter-side-b {
+    padding-left: 10px;
+  }
+  

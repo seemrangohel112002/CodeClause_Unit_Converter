@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+
+   <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+      <h1><span>UNIT</span><br/>CONVERTER</h1>
+      <div class="converter-wrapper">
+      <form name="property_form">
+        <span>
+          <select
+            class="select-property"
+            name="the_menu"
+            size="1"
+            onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)"
+          ></select>
+        </span>
+      </form>
+
+      <div class="converter-side-a">
+        <form name="form_A" onSubmit="return false">
+          <input
+            type="text"
+            class="numbersonly"
+            name="unit_input"
+            maxlength="20"
+            value="0"
+            onKeyUp="CalculateUnit(document.form_A, document.form_B)"
+          />
+          <span>
+            <select
+              name="unit_menu"
+              onChange="CalculateUnit(document.form_B, document.form_A)"
+            ></select>
+          </span>
+        </form>
+      </div>
+      <!-- /converter-side-a -->
+
+      <div class="converter-equals">
+        <p>=</p>
+      </div>
+      <!-- /converter-side-a -->
+
+      <div class="converter-side-b">
+        <form name="form_B" onSubmit="return false">
+          <input
+            type="text"
+            class="numbersonly"
+            name="unit_input"
+            maxlength="20"
+            value="0"
+            onkeyup="CalculateUnit(document.form_B, document.form_A)"
+          />
+          <span>
+            <select
+              name="unit_menu"
+              onChange="CalculateUnit(document.form_A, document.form_B)"
+            ></select>
+          </span>
+        </form>
+      </div>
+      <!-- /converter-side-b -->
+    </div>
+    
+<div id="futcResult"></div>
+</div>
+<br><h3>Common Conversions</h3>
+<table width="100%"  id="homelist">
+	<tr>
+		<td valign="top" width="50%"><ul><li><a href="/length/cm-to-inches.htm">cm to inches</a></li><li><a href="/weight-and-mass/kg-to-lbs.htm">kg to lbs</a></li><li><a href="/temperature/celsius-to-fahrenheit.htm">Celsius to Fahrenheit</a></li><li><a href="/length/mm-to-inches.htm">mm to inches</a></li><li><a href="/length/meters-to-feet.htm">meters to feet</a></li><li><a href="/length/km-to-miles.htm">km to miles</a></li><li><a href="/length/cm-to-feet.htm">cm to feet</a></li><li><a href="/weight-and-mass/grams-to-ounces.htm">grams to ounces</a></li><li><a href="/length/inches-to-feet.htm">inches to feet</a></li><li><a href="/volume/liters-to-gallons.htm">liters to gallons</a></li><li><a href="/weight-and-mass/pounds-to-ounces.htm">pounds to ounces</a></li><li><a href="/speed/mph-to-kph.htm">mph to kph</a></li><li><a href="/area/acres-to-square-feet.htm">acres to square feet</a></li><li><a href="/angle/radians-to-degrees.htm">radians to degrees</a></li><li><a href="/power/hp-to-kw.htm">hp to kw</a></li><li><a href="/length/meters-to-yards.htm">meters to yards</a></li><li><a href="/volume/ml-to-cups.htm">mL to cups</a></li></ul></td>
+		<td valign="top" width="50%"><ul><li><a href="/length/inches-to-cm.htm">inches to cm</a></li><li><a href="/weight-and-mass/lbs-to-kg.htm">lbs to kg</a></li><li><a href="/temperature/fahrenheit-to-celsius.htm">Fahrenheit to Celsius</a></li><li><a href="/length/inches-to-mm.htm">inches to mm</a></li><li><a href="/length/feet-to-meters.htm">Feet to Meters</a></li><li><a href="/length/miles-to-km.htm">miles to km</a></li><li><a href="/length/feet-to-cm.htm">feet to cm</a></li><li><a href="/weight-and-mass/ounces-to-grams.htm">ounces to grams</a></li><li><a href="/length/feet-to-inches.htm">feet to inches</a></li><li><a href="/volume/gallons-to-liters.htm">gallons to liters</a></li><li><a href="/weight-and-mass/ounces-to-pounds.htm">ounces to pounds</a></li><li><a href="/speed/kph-to-mph.htm">kph to mph</a></li><li><a href="/area/square-feet-to-acres.htm">square feet to acres</a></li><li><a href="/angle/degrees-to-radians.htm">degrees to radians</a></li><li><a href="/power/kw-to-hp.htm">kw to hp</a></li><li><a href="/length/yards-to-meters.htm">yards to meters</a></li><li><a href="/volume/cups-to-ml.htm">cups to mL</a></li></ul></td>
+	</tr>
+</table>
+<br>
+<p>A unit is a measurement of a quantity that is defined or adopted by tradition or law. Other quantities can be expressed as a multiple of the unit.</p>
+<p>In human history, various unit systems were developed and used in different regions and cultures. Currently, the global standard of measurement is the International System of Units (SI), which is a modern form of the metric system. Although SI is intended for global use, it has not been fully adopted, and some other systems of measurement are still used in parts of the world.</p>
+
+
+	</div>
+	<div id="right">
+		<br><div id="othercalc"></div><script>var navSectionName = "";</script>	</div>
+</div>
+   
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
